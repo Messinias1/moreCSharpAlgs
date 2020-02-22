@@ -10,6 +10,7 @@ namespace moreCSharpAlgs
     {
         static void Main(string[] args)
         {
+            // init azure
             void convertToF(int celsius)
             {
                 var fahrenheit = 0;
