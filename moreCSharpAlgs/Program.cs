@@ -10,6 +10,7 @@ namespace moreCSharpAlgs
     {
         static void Main(string[] args)
         {
+            // init azure
             // solution
             void convertToF(int celsius)
             {
