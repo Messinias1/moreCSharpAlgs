@@ -8,16 +8,16 @@ namespace moreCSharpAlgs
 {
     class Program
     {
+        void diffArray(int[] arr1, int[] arr2)
+        {
+            var newArr = new List<int>();
+            // Same, same; but different.
+            Console.WriteLine(newArr);
+        }
         static void Main(string[] args)
         {
-            // init azure
-            void convertToF(int celsius)
-            {
-                var fahrenheit = 0;
-                Console.WriteLine(fahrenheit = (celsius * 9) / 5 + 32);
-            }
-
-            convertToF(30);
+            int[] arr1 = { 1, 2, 3, 5};
+            int[] arr2 = { 1, 2, 3, 4, 5 };
         }
     }
 }
