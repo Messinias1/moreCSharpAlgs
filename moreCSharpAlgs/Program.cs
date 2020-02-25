@@ -10,9 +10,22 @@ namespace moreCSharpAlgs
     {
         void diffArray(int[] arr1, int[] arr2)
         {
-            var newArr = new List<int>();
-
-            Console.WriteLine(arr2.Except(arr1));
+            if(arr1.Length > arr2.Length)
+            {
+                IEnumerable<int> items = arr1.Except(arr2);
+                foreach (var item in items)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+            else
+            {
+                IEnumerable<int> items = arr2.Except(arr1);
+                foreach (var item in items)
+                {
+                    Console.WriteLine(item);
+                }
+            } 
         }
         
         static void Main(string[] args)
