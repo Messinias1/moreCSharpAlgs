@@ -10,6 +10,7 @@ namespace moreCSharpAlgs
     {
         void diffArray(int[] arr1, int[] arr2)
         {
+            // solution
             if(arr1.Length > arr2.Length)
             {
                 IEnumerable<int> items = arr1.Except(arr2);
