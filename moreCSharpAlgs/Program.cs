@@ -8,33 +8,23 @@ namespace moreCSharpAlgs
 {
     class Program
     {
-        void diffArray(int[] arr1, int[] arr2)
-        {
-            if(arr1.Length > arr2.Length)
-            {
-                IEnumerable<int> items = arr1.Except(arr2);
-                foreach (var item in items)
-                {
-                    Console.WriteLine(item);
-                }
-            }
-            else
-            {
-                IEnumerable<int> items = arr2.Except(arr1);
-                foreach (var item in items)
-                {
-                    Console.WriteLine(item);
-                }
-            } 
-        }
+        
         
         static void Main(string[] args)
         {
-            Program p = new Program();
+            void destroyer(int[] arr, params int[] list)
+            {
+                foreach(var num in list)
+                {
+                    Console.WriteLine(num);
+                }
+            }
 
-            p.diffArray(new int[] { 1, 2, 3, 5 }, new int[] { 1, 2, 3, 4, 5 });
+            destroyer(new int[] { 1, 2, 3, 1, 2, 3 }, 2, 3);
+            //   You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
+
+            //   Note
+            //   You have to use the arguments object.
         }
     }
 }
-
-//Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both.In other words, return the symmetric difference of the two arrays.
